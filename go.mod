@@ -6,12 +6,14 @@ module github.com/upbound/provider-azuread
 
 go 1.24.1
 
+replace github.com/crossplane/upjet/v2 => github.com/erhancagirici/upjet/v2 v2.0.0-20250731225050-d1183ac46fde
+
 require (
 	dario.cat/mergo v1.0.2
 	github.com/alecthomas/kingpin/v2 v2.4.0
 	github.com/crossplane/crossplane-runtime/v2 v2.0.0-20250730220209-c306b1c8b181
 	github.com/crossplane/crossplane-tools v0.0.0-20250731192036-00d407d8b7ec
-	github.com/crossplane/upjet v1.9.1-0.20250731180512-b4eb48bcbaa0
+	github.com/crossplane/upjet/v2 v2.0.0-20250731225050-d1183ac46fde
 	github.com/hashicorp/terraform-json v0.25.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.37.0
 	github.com/hashicorp/terraform-provider-azuread v1.6.1-0.20230727144955-0adfe586f500
