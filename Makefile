@@ -47,7 +47,7 @@ GOLANGCILINT_VERSION ?= 2.8.0
 
 GO_STATIC_PACKAGES = $(GO_PROJECT)/cmd/provider $(GO_PROJECT)/cmd/generator
 GO_LDFLAGS += -X $(GO_PROJECT)/internal/version.Version=$(VERSION)
-GO_SUBDIRS += cmd internal apis generate
+GO_SUBDIRS += cmd internal apis generate test
 -include build/makelib/golang.mk
 
 # ====================================================================================
